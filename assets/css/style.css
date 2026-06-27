@@ -68,3 +68,16 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .footer a:not(.footer-brand){
   display:block;
 }
+
+
+/* Real creams update */
+.real-cream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.real-cream-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(201,162,88,.14);display:flex;flex-direction:column}
+.real-cream-card img{width:100%;height:320px;object-fit:cover;background:#f4efe6}
+.real-cream-body{padding:22px}
+.real-cream-body span{display:block;color:var(--gold3);font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800;margin-bottom:8px}
+.real-cream-body h3{font-family:"Playfair Display",serif;font-size:1.55rem;line-height:1.08;margin-bottom:10px}
+.real-cream-body p{color:var(--muted);font-size:.95rem;line-height:1.55;margin-bottom:14px}
+.real-cream-body b{color:var(--dark);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:980px){.real-cream-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.real-cream-grid{grid-template-columns:1fr}.real-cream-card img{height:300px}.real-cream-body{padding:18px}.real-cream-body h3{font-size:1.35rem}}
