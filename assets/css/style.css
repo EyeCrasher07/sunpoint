@@ -505,3 +505,48 @@
     object-position:center 36%;
   }
 }
+
+
+
+/* Fix for Usluge / Kremice product cards on mobile */
+@media(max-width:560px){
+  .product-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .product-grid .product{
+    display:block !important;
+    min-height:auto;
+    padding:18px;
+  }
+
+  .product-grid .product .emoji{
+    display:block;
+    font-size:1.7rem;
+    line-height:1;
+    margin:0 0 10px;
+  }
+
+  .product-grid .product small{
+    display:block;
+    margin:0 0 5px;
+    line-height:1.25;
+  }
+
+  .product-grid .product h3{
+    display:block;
+    margin:0 0 7px;
+    line-height:1.12;
+    font-size:1.28rem;
+  }
+
+  .product-grid .product p{
+    display:block;
+    grid-column:auto;
+    margin:0;
+    line-height:1.45;
+    font-size:.9rem;
+  }
+}
