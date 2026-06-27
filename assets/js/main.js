@@ -1,16 +1,17 @@
-const body=document.body;
-const toggle=document.querySelector('[data-nav-toggle]');
-if(toggle){toggle.addEventListener('click',()=>{const open=body.classList.toggle('nav-open');toggle.setAttribute('aria-expanded',open?'true':'false')})}
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>body.classList.remove('nav-open')));
+
+const nav=document.querySelector('[data-nav]');
+const menuBtn=document.querySelector('[data-menu]');
+const links=document.querySelectorAll('.nav-links a');
+function onScroll(){ if(window.scrollY>20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); }
+onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+if(menuBtn){ menuBtn.addEventListener('click',()=>{ const open=nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded',open?'true':'false'); }); }
+links.forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open'); menuBtn?.setAttribute('aria-expanded','false')}));
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-const lightbox=document.querySelector('[data-lightbox]');
-if(lightbox){
-  const img=lightbox.querySelector('[data-lightbox-img]');
-  document.querySelectorAll('[data-lightbox-src]').forEach(tile=>{
-    tile.addEventListener('click',()=>{img.src=tile.dataset.lightboxSrc;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')})
-  });
-  const close=()=>{lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');img.src=''};
-  lightbox.querySelector('[data-lightbox-close]').addEventListener('click',close);
-  lightbox.addEventListener('click',e=>{if(e.target===lightbox)close()});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+const root=document.querySelector('[data-lightbox-root]');
+if(root){
+  const img=root.querySelector('[data-lightbox-img]');
+  document.querySelectorAll('[data-lightbox]').forEach(btn=>btn.addEventListener('click',()=>{img.src=btn.dataset.lightbox;root.classList.add('open')}));
+  root.querySelector('[data-lightbox-close]').addEventListener('click',()=>{root.classList.remove('open');img.src=''});
+  root.addEventListener('click',e=>{if(e.target===root){root.classList.remove('open');img.src=''}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){root.classList.remove('open');img.src=''}});
 }

@@ -2,88 +2,91 @@
 <html lang="sr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f0b08">
   <title>Galerija — Sun Point Niš</title>
-  <meta name="description" content="Galerija Sun Point Niš: salon, oprema i atmosfera.">
+  <meta name="description" content="Galerija Sun Point Niš solarijuma i atmosfere salona.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Preskoči na sadržaj</a>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Sun Point Niš početna">
-      <span class="brand-mark"><img src="https://www.moja-delatnost.rs/Solarijum-Ni%C5%A1-%282%29.PNG.png?p=841ebdb80ac544bba5c02722c856400f&type=Logo" alt="Sun Point logo"></span>
-      <span class="brand-text"><strong>Sun Point</strong><small>Niš • solarijum</small></span>
-    </a>
-    <ul class="nav-links" id="nav-links"><li><a class="" href="index.html">Početna</a></li><li><a class="" href="usluge.html">Usluge</a></li><li><a class="active" href="galerija.html">Galerija</a></li><li><a class="" href="cenovnik.html">Cenovnik</a></li><li><a class="nav-cta" href="kontakt.html">Kontakt</a></li></ul>
-    <button class="nav-toggle" type="button" aria-label="Otvori meni" aria-controls="nav-links" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
-  </div>
+<header class="nav" data-nav>
+  <a class="brand" href="index.html" aria-label="Sun Point Niš početna">
+    <span class="brand-logo"><img src="https://www.moja-delatnost.rs/Solarijum-Ni%C5%A1-%282%29.PNG.png?p=841ebdb80ac544bba5c02722c856400f&type=Logo" alt="Sun Point Niš logo"></span>
+    <span class="brand-copy"><strong>Sun Point</strong><small>Niš</small></span>
+  </a>
+  <ul class="nav-links" id="navLinks"><li><a href="index.html" class="">Početna</a></li><li><a href="o-nama.html" class="">O nama</a></li><li><a href="solarijumi.html" class="">Solarijumi</a></li><li><a href="kremice.html" class="">Kremice</a></li><li><a href="galerija.html" class="active">Galerija</a></li><li><a href="kontakt.html" class="nav-cta">Kontakt</a></li></ul>
+  <button class="hamburger" type="button" aria-label="Otvori meni" aria-controls="navLinks" aria-expanded="false" data-menu>
+    <span></span><span></span><span></span>
+  </button>
 </header>
-<main id="main">
 
-<section class="page-hero page-hero-pattern">
-  <div class="container">
-    <div class="eyebrow">Galerija</div>
-    <h1>Atmosfera našeg <em>salona</em></h1>
-    <p>Pogledajte ambijent, opremu i deo atmosfere iz Sun Point salona u Nišu.</p>
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%287%29.PNG.png?p=5d86fb763f2047398631676ee3cf4201&type=Gallery')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">Galerija</span>
+    <h1>Atmosfera salona</h1>
   </div>
 </section>
 
-<section class="section-pad section-dark">
+<section class="section dark">
   <div class="container">
-    <div class="header-row">
-      <div><div class="eyebrow">Fotografije salona</div><h2 class="section-title">Salon, kabine i <em>detalji</em></h2><p class="section-sub">Klikni na sliku za uvećani prikaz.</p></div>
-      <a class="btn btn-ghost" href="https://www.instagram.com/megasun.nis/" target="_blank" rel="noopener">Instagram profil</a>
+    <div class="gallery-grid">
+      <button class="gallery-item tall" data-lightbox="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%283%29.PNG.png?p=680334a3313341acb8a72a603bc12554&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%283%29.PNG.png?p=680334a3313341acb8a72a603bc12554&type=Gallery" alt="Sun Point galerija"></button>
+      <button class="gallery-item" data-lightbox="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%284%29.PNG.png?p=7063279be57b466191b0a300502ccb73&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%284%29.PNG.png?p=7063279be57b466191b0a300502ccb73&type=Gallery" alt="Sun Point galerija"></button>
+      <button class="gallery-item" data-lightbox="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%285%29.PNG.png?p=0d7bd06223584b638aead2c068d28034&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%285%29.PNG.png?p=0d7bd06223584b638aead2c068d28034&type=Gallery" alt="Sun Point galerija"></button>
+      <button class="gallery-item" data-lightbox="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%287%29.PNG.png?p=5d86fb763f2047398631676ee3cf4201&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%287%29.PNG.png?p=5d86fb763f2047398631676ee3cf4201&type=Gallery" alt="Sun Point galerija"></button>
+      <button class="gallery-item wide" data-lightbox="https://www.011info.com/uploads/Firma/2015/11/16/37842/2n.jpg"><img src="https://www.011info.com/uploads/Firma/2015/11/16/37842/2n.jpg" alt="Solarijum galerija"></button>
+      <button class="gallery-item" data-lightbox="https://www.011info.com/uploads/Firma/2015/11/16/37842/4n.jpg"><img src="https://www.011info.com/uploads/Firma/2015/11/16/37842/4n.jpg" alt="Solarijum galerija"></button>
+      <button class="gallery-item" data-lightbox="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-121f6cb0-1.jpg"><img src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-121f6cb0-1.jpg" alt="Solarijum galerija"></button>
     </div>
-    <div class="gallery-unique gallery-more">
-      <div class="gallery-tile tall" data-lightbox-src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%284%29.PNG.png?p=7063279be57b466191b0a300502ccb73&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%284%29.PNG.png?p=7063279be57b466191b0a300502ccb73&type=Gallery" alt="Sun Point Niš galerija 1" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%285%29.PNG.png?p=0d7bd06223584b638aead2c068d28034&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%285%29.PNG.png?p=0d7bd06223584b638aead2c068d28034&type=Gallery" alt="Sun Point Niš galerija 2" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%287%29.PNG.png?p=5d86fb763f2047398631676ee3cf4201&type=Gallery"><img src="https://www.moja-delatnost.rs/Solarijum%20Ni%C5%A1%20%287%29.PNG.png?p=5d86fb763f2047398631676ee3cf4201&type=Gallery" alt="Sun Point Niš galerija 3" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://www.011info.com/uploads/Firma/2015/11/16/37842/3n.jpg"><img src="https://www.011info.com/uploads/Firma/2015/11/16/37842/3n.jpg" alt="MegaSun solarijum plavo svetlo" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-c06d8a6f-1.jpg"><img src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-c06d8a6f-1.jpg" alt="Solarijum soba" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-121f6cb0-1.jpg"><img src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9-121f6cb0-1.jpg" alt="Kozmetika i recepcija" loading="lazy"></div>
-      <div class="gallery-tile" data-lightbox-src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9.jpg"><img src="https://cdn.navidiku.rs/firme/proizvodgalerija3/galerija104322/studio-za-suncanje-zemun-fd38b9.jpg" alt="Izlog MegaSun salon" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section-pad instagram-clean" style="background:var(--dark-2);color:var(--white)">
-  <div class="container">
-    <div class="ig-clean-card single-ig">
+    <div class="instagram-box">
       <div>
-        <div class="eyebrow">Instagram</div>
-        <h2 class="section-title" style="color:var(--white)">Još slika na <em>Instagramu</em></h2>
-        <p class="section-sub">Ako želite da pogledate još slika, aktuelne objave i atmosferu iz salona, zapratite nas na Instagram profilu.</p>
+        <span class="eyebrow">Instagram</span>
+        <h2>Još slika i aktuelnih objava</h2>
+        <p>Za više fotografija, snimaka i atmosfere iz salona posetite naš Instagram profil.</p>
       </div>
-      <div class="ig-clean-actions">
-        <a class="btn btn-primary" href="https://www.instagram.com/megasun.nis/" target="_blank" rel="noopener">Pogledaj Instagram</a>
-      </div>
+      <a class="btn btn-gold" href="https://www.instagram.com/megasun.nis/" target="_blank" rel="noopener">Pogledaj Instagram</a>
     </div>
   </div>
 </section>
-<div class="lightbox" aria-hidden="true" data-lightbox><button class="lightbox-close" type="button" aria-label="Zatvori" data-lightbox-close>×</button><img src="" alt="Uvećana slika" data-lightbox-img></div>
+
+<div class="lightbox" data-lightbox-root>
+  <button type="button" data-lightbox-close>×</button>
+  <img src="" alt="Uvećana slika" data-lightbox-img>
+</div>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a class="footer-brand" href="index.html" aria-label="Sun Point Niš početna">
-      <span class="brand-mark small"><img src="https://www.moja-delatnost.rs/Solarijum-Ni%C5%A1-%282%29.PNG.png?p=841ebdb80ac544bba5c02722c856400f&type=Logo" alt="Sun Point logo"></span>
-      <span class="brand-text"><strong>Sun Point</strong><small>Niš • solarijum</small></span>
-    </a>
-    <div>© <span data-year>2026</span> Sun Point Niš</div>
-    <div class="footer-links">
-      <a href="usluge.html">Usluge</a>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="index.html"><span class="brand-logo small"><img src="https://www.moja-delatnost.rs/Solarijum-Ni%C5%A1-%282%29.PNG.png?p=841ebdb80ac544bba5c02722c856400f&type=Logo" alt="Sun Point Niš logo"></span><span><strong>Sun Point Niš</strong><small>Solarijum & beauty salon</small></span></a>
+      <p>Preplanuo, ujednačen i negovan ten tokom cele godine u prijatnom salonu u Nišu.</p>
+    </div>
+    <div>
+      <h5>Stranice</h5>
+      <a href="o-nama.html">O nama</a>
+      <a href="solarijumi.html">Solarijumi</a>
+      <a href="kremice.html">Kremice</a>
       <a href="galerija.html">Galerija</a>
-      <a href="cenovnik.html">Cenovnik</a>
-      <a href="https://www.instagram.com/megasun.nis/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div>
+      <h5>Kontakt</h5>
+      <a href="tel:+381611567245">061/1567-245</a>
+      <a href="mailto:dragancvetinovic@gmail.com">dragancvetinovic@gmail.com</a>
+      <a href="https://www.instagram.com/megasun.nis/" target="_blank" rel="noopener">@megasun.nis</a>
     </div>
   </div>
+  <div class="footer-bottom">© <span data-year></span> Sun Point Niš. Sva prava zadržana.</div>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
